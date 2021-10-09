@@ -1,0 +1,107 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+body{
+    background: var(--preto);
+    color: white;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 15px;
+    
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+    
+}
+header nav a:hover{
+    color: #fff;
+}
+
+
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/ozark05.jpg");
+    height: 500px;
+    background-size: cover;
+}
+
+.filme-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS',  Arial, sans-serif;
+    margin: 0px 15px
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    margin-right: 15px;
+    margin-top: 30px;
+
+    transition: .3s ease-out; 
+  
+
+}
+
+.descricao{
+    margin: 10px 15px ;
+}
+
+.botao:hover{
+    background-color: silver;
+    color: black;
+    cursor: pointer;
+    
+}
+
+.botao i{
+    margin-right: 7px;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.box-item{
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+
